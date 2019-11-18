@@ -1,0 +1,8 @@
+<p>show works!</p>
+
+<button [routerLink]="['/index']">Home</button>
+
+<p>Title: {{oneBook.title}}</p>
+<p>Author: {{oneBook.author}}</p>
+
+<button (click)="deleteBook(oneBook._id)">DELETE</button>

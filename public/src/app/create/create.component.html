@@ -1,0 +1,15 @@
+<p>create works!</p>
+<button [routerLink]="['/index']">Home</button><hr>
+
+<h1>Create a New Book</h1><br><br>
+<div *ngIf='errors.title.message'>
+    {{errors.title.message}}
+</div>
+<p>Title: <input type="text" name ="title" [(ngModel)]="newBook.title"></p>
+<div *ngIf='errors.author.message'>
+    {{errors.author.message}}
+</div>
+<p>Author: <input type="text" name ="author" [(ngModel)]="newBook.author"></p>
+<button (click)="createBook()">Create</button>
+
+

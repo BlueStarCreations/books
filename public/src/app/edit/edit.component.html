@@ -1,0 +1,12 @@
+<p>edit works!</p>
+
+<button [routerLink]="['/index']">Home</button>
+
+<p>Title: {{oneBook.title}}</p>
+<p>Author: {{oneBook.author}}</p>
+
+<p>Title: <input type="text" name ="title" value="oneBook.title" [(ngModel)]="oneBook.title"></p>
+<p>Author: <input type="text" name ="author" value="oneBook.author" [(ngModel)]="oneBook.author"></p>
+<button (click)="editBook(oneBook._id)">UPDATE</button>
+
+<button (click)="deleteBook(oneBook._id)">DELETE</button>

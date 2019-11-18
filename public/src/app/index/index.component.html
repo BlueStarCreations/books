@@ -1,0 +1,11 @@
+<button [routerLink]="['/create']">Create New Book</button>
+<br><br>
+<h1>All Books!</h1>
+<hr>
+<div *ngFor="let book of books">
+    <p>Title: {{book.title}}</p>
+    <p>Author: {{book.author}}</p>
+    <button routerLink="/show/{{book._id}}">SHOW</button>
+    <button routerLink="/edit/{{book._id}}">EDIT</button>
+    <hr>
+</div>
